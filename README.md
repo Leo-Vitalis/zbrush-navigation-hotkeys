@@ -4,7 +4,7 @@
 
 ## Intro
 
-A quick search reveals the extent of dissatisfaction expressed over the years concerning the standard ZBrush navigation options. With right-button navigation style the precision of movements is compromised by having to hover the pen over the surface of the tablet. The classic left-button navigation, on the other hand, necessitates moving the pen over to the free canvas area for each and every navigation gesture, which is very questionable in terms of efficiency and speed. I believe it is hard to beat keyboard at convenience, precision and speed. I propose my AutoHotkey remapping solution, which has been partially inspired by Cinema4D navigation style, which uses **1**, **2** and **3** keyboard keys in combination with left mouse button. My remapping is a modification of that idea:
+A quick search reveals the extent of dissatisfaction expressed over the years concerning the standard ZBrush navigation options. With right-button navigation style the precision of movements is compromised by having to hover the pen over the surface of the tablet. The classic left-button navigation, on the other hand, necessitates moving the pen over to the free canvas area for each and every navigation gesture, which is very questionable in terms of efficiency and speed. I believe it is hard to beat keyboard at convenience, precision and speed. I propose my AutoHotkey remapping solution, which has been partially inspired by Cinema4D navigation style, which uses **1**, **2** and **3** keyboard keys in combination with left mouse button. My remapping is a modification of this idea:
 
 | Key         | Mouse button             | Action         |
 | ----------- | ------------------------ | -------------- |
