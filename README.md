@@ -9,7 +9,7 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 | **Alt + 2** | Left mouse button + drag | Zoom (Scale)   |
 | **Win**     |                          | Alt            |
  
- To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to Draw Size and Z Intensity sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. 
+ To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to Draw Size and Z Intensity sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. Drop a comment if you have any questions and don't forget to star the script if you find it helpful.
 
 # Set-Up
 
@@ -18,6 +18,8 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 2. **Right-Click Navigation** should be turned on in **Preferences > Interface > Navigation**. 
 
 3. To allow performing several Pan or Zoom gestures in succession without releasing the keyboard keys, the script relies on Windows autorepeat function to return the state variables `zOneDown` and `zTwoDown` back to `1`. The default initial delay may not be sufficient. Open the keyboard auto-repeat settings in Windows by pressing **Win + R** and typing `control keyboard`. Set the repeat delay to shortest. It is also a good idea to lower the repeat rate. Each time windows sends a synthetic key press event, AHK has to evaluate the corresponding hotkey unless the hotkey uses `KeyWait` to suspend the thread. Lowering the rate of "bombardment" with synthetic key presses should minimize the probability of issues.
+
+<img width="368" height="173" alt="Autorepeat_settings" src="https://github.com/user-attachments/assets/9bef4324-3789-4094-aade-7c27e8baa398" />
 
 # Possible Issues
 
@@ -36,7 +38,7 @@ The hotkeys can be activated just by hovering the cursor over ZBrush window, wit
 1. Add the following function to the script before `IsZBrushAltState(*)`:
 
 ```ahk
-; Combine WinActive() with MouseGetPos() to check whether an application is active or the cursor is currently over one of its windows.
+; Check whether the application is active or the cursor is currently over its window.
 IsAppActiveOrUnderCursor(exeName)
 {
     if WinActive("ahk_exe " exeName)
