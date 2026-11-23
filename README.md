@@ -19,6 +19,8 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 
 3. To allow performing several Pan or Zoom gestures in succession without releasing the keyboard keys, the script relies on Windows autorepeat function to return the state variables `zOneDown` and `zTwoDown` back to `1`. The default initial delay may not be sufficient. Open the keyboard auto-repeat settings in Windows by pressing **Win + R** and typing `control keyboard`. Set the repeat delay to shortest. It is also a good idea to lower the repeat rate. Each time windows sends a synthetic key press event, AHK has to evaluate the corresponding hotkey unless the hotkey uses `KeyWait` to suspend the thread. Lowering the rate of "bombardment" with synthetic key presses should minimize the probability of issues.
 
+<img width="368" height="173" alt="Autorepeat_settings" src="https://github.com/user-attachments/assets/9bef4324-3789-4094-aade-7c27e8baa398" />
+
 # Possible Issues
 
 1. Although I have tested the reliability of the script, AutoHotkey by it's nature doesn't guarantee that the original key strokes never reach ZBrush. By default, the **1** key is assigned to **Stroke > ReplayLast**. It is better to assign the keys engaged in navigation to something inoffensive. I've chosen to dedicate the number keys to sliders: **1**, **2**, **3** and **4** to **Draw Size**, **Z Intensity**, **RGB Intensity** and **Focal Shift** respectively. Therefore, **Alt + 1** and **Alt + 2** will activate navigation gestures, whereas **1** and **2** pressed alone will call up sliders, which, you have to agree, is quite convenient. 
@@ -36,7 +38,7 @@ The hotkeys can be activated just by hovering the cursor over ZBrush window, wit
 1. Add the following function to the script before `IsZBrushAltState(*)`:
 
 ```ahk
-; Combine WinActive() with MouseGetPos() to check whether an application is active or the cursor is currently over one of its windows.
+; Check whether the application is active or the cursor is currently over its window.
 IsAppActiveOrUnderCursor(exeName)
 {
     if WinActive("ahk_exe " exeName)
