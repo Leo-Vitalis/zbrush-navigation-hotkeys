@@ -9,7 +9,7 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 | **Alt + 2** | Left mouse button + drag | Zoom (Scale)   |
 | **Win**     |                          | Alt            |
  
- To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to Draw Size and Z Intensity sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. Drop a comment if you have any questions and don't forget to star the script if you find it helpful.
+ To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to **Draw Size** and **Z Intensity** sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. Drop a comment if you have any issues and don't forget to star the script if you find it helpful.
 
 # Set-Up
 
@@ -23,11 +23,11 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 
 # Possible Issues
 
-1. Although I have tested the reliability of the script, AutoHotkey by it's nature doesn't guarantee that the original key strokes never reach ZBrush. By default, the **1** key is assigned to **Stroke > ReplayLast**. It is better to assign the keys engaged in navigation to something inoffensive. I've chosen to dedicate the number keys to sliders: **1**, **2**, **3** and **4** to **Draw Size**, **Z Intensity**, **RGB Intensity** and **Focal Shift** respectively. Therefore, **Alt + 1** and **Alt + 2** will activate navigation gestures, whereas **1** and **2** pressed alone will call up sliders, which, you have to agree, is quite convenient. 
+1. Although I have tested the reliability of the script, AutoHotkey by its nature doesn't guarantee that the original key strokes never reach ZBrush. By default, the **1** key is assigned to **Stroke > ReplayLast**. It is better to assign the keys engaged in navigation to something inoffensive. I've chosen to dedicate the number keys to sliders: **1**, **2**, **3** and **4** to **Draw Size**, **Z Intensity**, **RGB Intensity** and **Focal Shift** respectively. Therefore, **Alt + 1** and **Alt + 2** will activate navigation gestures, whereas **1** and **2** pressed alone will call up sliders, which, you have to agree, is quite convenient. 
 
 2. The Pan section of the `zNav` function introduces 50 ms delay before releasing synthetic Alt. This is necessary to prevent ZBrush from switching to Zoom mode. If you experience unexpected jumps at the end of panning, setting this delay to a higher value should resolve it. 
 
-3. Do not remove the `~Alt` hotkey defined for Photoshop! AutoHotkey treats Alt differently, depending on whether this hotkey (with tilde prefix) is present in the script or not. The hotkey can be defined for any other program, not necessarily Photoshop.
+3. Do not remove the `~Alt` hotkey defined for Photoshop! AutoHotkey treats Alt differently, depending on whether this hotkey (with tilde prefix) is present in the script or not. The hotkey can be defined for any other program, it doesn't have to be Photoshop.
 
 4. The majority of issues happen when switching back to ZBrush from another application. Before pressing the navigation shortcuts, make sure to bring ZBrush to focus by left-clicking once on an empty canvas area. You might choose to try the following approach to automate this. 
 
