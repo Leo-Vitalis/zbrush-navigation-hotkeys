@@ -1,6 +1,6 @@
 # ZBrush Navigation Hotkeys
 
-**Navigate the ZBrush viewport using keyboard shortcuts and left mouse button dragging.** Orbit, pan and zoom without moving your pen to the background area of the canvas or hovering the pen over the tablet surface.
+**Navigate the ZBrush viewport using keyboard shortcuts and left mouse button.** Orbit, pan and zoom without moving your pen to the background area of the canvas or hovering the pen over the tablet surface.
 
 ## Intro
 
