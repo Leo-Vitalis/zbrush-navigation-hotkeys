@@ -169,7 +169,6 @@ $4::
 }
 
 
-
 ; Do not remove! AHK treats Alt differently, when the `~Alt` hotkey isn't defined somewhere in the script.
 #HotIf WinActive("ahk_exe Photoshop.exe")
 
