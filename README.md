@@ -1,4 +1,8 @@
-# Introduction
+# ZBrush Navigation Hotkeys
+
+**Navigate the ZBrush viewport using keyboard shortcuts and left mouse button dragging.** Orbit, pan and zoom without moving your pen to the backround area of the canvas or hovering the pen over the tablet surface.
+
+## Intro
 
 A quick search reveals the extent of dissatisfaction expressed over the years concerning the standard ZBrush navigation options. With right-button navigation style the precision of movements is compromised by having to hover the pen over the surface of the tablet. The classic left-button navigation, on the other hand, necessitates moving the pen over to the free canvas area for each and every navigation gesture, which is very questionable in terms of efficiency and speed. I believe it is hard to beat keyboard at convenience, precision and speed. I propose my AutoHotkey remapping solution, which has been partially inspired by Cinema4D navigation style, which uses **1**, **2** and **3** keyboard keys in combination with left mouse button. My remapping is a modification of that idea:
 
@@ -11,7 +15,7 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
  
  To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to **Draw Size** and **Z Intensity** sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. Drop a comment if you have any issues and don't forget to star the script if you find it helpful.
 
-# Set-Up
+## Set-Up
 
 1. Install AutoHotkey. Download the script and place it into the `%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Start-up` folder to make it run on system start-up. 
 
@@ -21,7 +25,7 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 
 <img width="368" height="173" alt="Autorepeat_settings" src="https://github.com/user-attachments/assets/9bef4324-3789-4094-aade-7c27e8baa398" />
 
-# Possible Issues
+## Possible Issues
 
 1. Although I have tested the reliability of the script, AutoHotkey by its nature doesn't guarantee that the original key strokes never reach ZBrush. By default, the **1** key is assigned to **Stroke > ReplayLast**. It is better to assign the keys engaged in navigation to something inoffensive. I've chosen to dedicate the number keys to sliders: **1**, **2**, **3** and **4** to **Draw Size**, **Z Intensity**, **RGB Intensity** and **Focal Shift** respectively. Therefore, **Alt + 1** and **Alt + 2** will activate navigation gestures, whereas **1** and **2** pressed alone will call up sliders, which, you have to agree, is quite convenient. 
 
@@ -31,7 +35,7 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 
 4. The majority of issues happen when switching back to ZBrush from another application. Before pressing the navigation shortcuts, make sure to bring ZBrush to focus by left-clicking once on an empty canvas area. You might choose to try the following approach to automate this. 
 
-# Hotkeys Activation on Hover
+## Hotkeys Activation on Hover
 
 The hotkeys can be activated just by hovering the cursor over ZBrush window, without the need to first bring focus to it. This can be useful when you often switch between different applications (ZBrush and PureRef, for example). However, I haven't tested this approach extensively. 
 
