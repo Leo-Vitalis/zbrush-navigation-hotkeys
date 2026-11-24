@@ -21,7 +21,7 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 
 2. **Right-Click Navigation** should be turned on in **Preferences > Interface > Navigation**. 
 
-3. To allow performing several Pan or Zoom gestures in succession without releasing the keyboard keys, the script relies on Windows autorepeat function to return the state variables `zOneDown` and `zTwoDown` back to `1`. The default initial delay may not be sufficient. Open the keyboard auto-repeat settings in Windows by pressing **Win + R** and typing `control keyboard`. Set the repeat delay to shortest. It is also a good idea to lower the repeat rate. Each time Windows sends a synthetic key press event, AHK has to evaluate the corresponding hotkey unless the hotkey uses `KeyWait` to suspend the thread. Lowering the rate of "bombardment" with synthetic key presses should minimize the probability of issues.
+3. To allow performing several Pan or Zoom gestures in succession without releasing the keyboard keys, the script relies on Windows autorepeat function to return the state variables `zOneDown` and `zTwoDown` back to `1`. The default initial delay may be too long. Open the keyboard auto-repeat settings in Windows by pressing **Win + R** and typing `control keyboard`. Set the repeat delay to shortest. It is also a good idea to lower the repeat rate. Each time Windows sends a synthetic key press event, AHK has to evaluate the corresponding hotkey unless the hotkey uses `KeyWait` to suspend the thread. Lowering the rate of "bombardment" with synthetic key presses should minimize the probability of issues.
 
 <img width="368" height="173" alt="Autorepeat_settings" src="https://github.com/user-attachments/assets/9bef4324-3789-4094-aade-7c27e8baa398" />
 
