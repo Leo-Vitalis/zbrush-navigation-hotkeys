@@ -13,7 +13,7 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 | **Alt + 2** | Left mouse button + drag | Zoom            |
 | **Win**     |                          | Alt             |
  
- To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to **Draw Size** and **Z Intensity** sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. Drop a comment if you have any issues and don't forget to star the script if you find it helpful.
+ To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to **Draw Size** and **Z Intensity** sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. For example, I can imagine it being adapted for Maya-style navigation. Drop a comment if you have any issues and don't forget to star the script if you find it helpful.
 
 ## Set-Up
 
@@ -33,7 +33,9 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 
 3. Do not remove the `~Alt` hotkey defined for Photoshop! AutoHotkey treats Alt differently, depending on whether this hotkey (with tilde prefix) is present in the script or not. The hotkey can be defined for any other program, it doesn't have to be Photoshop.
 
-4. The majority of issues happen when switching back to ZBrush from another application. Before pressing the navigation shortcuts, make sure to bring ZBrush to focus by left-clicking once on an empty canvas area. You might choose to try the following approach to automate this. 
+4. One major source of issues is sloppily pressed keyboard keys. I have added redundant variable resets, which have improved stability and alleviated the issue of stuck keys. But being precise with keyboard presses is still a good idea and will guarantee smooth and enjoyable work process.
+
+5. When switching back to ZBrush from another application, make sure to first bring focus to it by left-clicking once on an empty canvas area. You might choose to try the following approach to automate this. 
 
 ## Hotkeys Activation on Hover
 
