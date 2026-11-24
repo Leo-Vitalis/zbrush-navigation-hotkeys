@@ -6,12 +6,13 @@
 
 A quick search reveals the extent of dissatisfaction expressed over the years concerning the standard ZBrush navigation options. With right-button navigation style the precision of movements is compromised by having to hover the pen over the surface of the tablet. The classic left-button navigation, on the other hand, necessitates moving the pen over to the free canvas area for each and every navigation gesture, which is very questionable in terms of efficiency and speed. I believe it is hard to beat keyboard at convenience, precision and speed. I propose my AutoHotkey remapping solution, which has been partially inspired by Cinema4D navigation style, which uses **1**, **2** and **3** keyboard keys in combination with left mouse button. My remapping is a modification of this idea:
 
-| Key         | Mouse button             | Action         |
-| ----------- | ------------------------ | -------------- |
-| **Alt**     | Left mouse button + drag | Orbit (Rotate) |
-| **Alt + 1** | Left mouse button + drag | Pan (Move)     |
-| **Alt + 2** | Left mouse button + drag | Zoom (Scale)   |
-| **Win**     |                          | Alt            |
+| Key         | Mouse button             | Action          |
+| ----------- | ------------------------ | --------------- |
+| **Alt**     | Left mouse button + drag | Orbit           |
+| **Alt + 1** | Left mouse button + drag | Pan             |
+| **Alt + 2** | Left mouse button + drag | Zoom            |
+| **Alt + 3** | Left mouse button + drag | Z-Axis Rotation |
+| **Win**     |                          | Alt             |
  
  To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to **Draw Size** and **Z Intensity** sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. Drop a comment if you have any issues and don't forget to star the script if you find it helpful.
 
