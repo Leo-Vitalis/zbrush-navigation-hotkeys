@@ -11,7 +11,6 @@ A quick search reveals the extent of dissatisfaction expressed over the years co
 | **Alt**     | Left mouse button + drag | Orbit           |
 | **Alt + 1** | Left mouse button + drag | Pan             |
 | **Alt + 2** | Left mouse button + drag | Zoom            |
-| **Alt + 3** | Left mouse button + drag | Z-Axis Rotation |
 | **Win**     |                          | Alt             |
  
  To turbo-charge the efficiency, I suggest additionally assigning **1** and **2** keys to **Draw Size** and **Z Intensity** sliders (this can be done in ZBrush the usual way). The remapping is not set in stone, however. I believe the script is simple and transparent enough to allow experimentation with different keyboard combinations. Drop a comment if you have any issues and don't forget to star the script if you find it helpful.
