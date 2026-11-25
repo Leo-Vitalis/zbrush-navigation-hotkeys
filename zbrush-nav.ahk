@@ -1,7 +1,7 @@
 ; ------------------------------------------------------------
 ; Description: Custom navigation shortcuts for ZBrush.
 ; Author: Leo Vitalis
-; Version: 1.0.0
+; Version: 1.0.1
 ; GitHub: https://github.com/Leo-Vitalis/zbrush-navigation-hotkeys
 ; License: MIT
 ; ------------------------------------------------------------
@@ -45,7 +45,7 @@ zNav(*)
     }
 	else if zThreeDown
     {
-        ; Rotate around Z-axis
+        ; Z-Axis Rotation
 		Send "{Shift Down}{RButton Down}{Shift Up}"
 		KeyWait "LButton"
 		Send "{RButton Up}"
@@ -60,10 +60,10 @@ zNav(*)
     }
 }
 
-
 #HotIf WinActive("ahk_exe ZBrush.exe")
 
-; *Alt and *LAlt hotkeys autorepeat without using either KeyWait or a state variable to prevent it.
+; The ToolTip diagnostic method shows that both *Alt and *LAlt hotkeys autorepeat 
+; without using either KeyWait or a state variable to prevent it.
 *LAlt::
 {
 	global zOneDown, zTwoDown, zThreeDown	
@@ -80,9 +80,29 @@ zNav(*)
 
 	KeyWait "LAlt"
 
+    ; Redundant variable resets are necessary for stability. 
+    ; This method solves the issue of stuck keys.
 	zOneDown := 0
 	zTwoDown := 0
 	zThreeDown := 0
+}
+
+*1 Up::
+{
+    global zOneDown
+    zOneDown := 0
+}
+
+*2 Up::
+{
+    global zTwoDown
+    zTwoDown := 0
+}
+
+*3 Up::
+{
+    global zThreeDown
+    zThreeDown := 0
 }
 
 *LWin::
@@ -143,36 +163,19 @@ zNav(*)
     zThreeDown := 0
 }
 
-; Prevent autorepeat from flooding the slider input field with number 4. 
+; Prevent flooding the slider input field with number 4.
 $4::
 {
 	Send "{4}"
 	Keywait "4"
 }
 
-*1 Up::
-{
-    global zOneDown
-    zOneDown := 0
-}
-
-*2 Up::
-{
-    global zTwoDown
-    zTwoDown := 0
-}
-
-*3 Up::
-{
-    global zThreeDown
-    zThreeDown := 0
-}
-
 
 ; Do not remove! AHK treats Alt differently, when the `~Alt` hotkey isn't defined somewhere in the script.
+; Doesn't have to be Photoshop. It can be any other program.
 #HotIf WinActive("ahk_exe Photoshop.exe")
 
-; Prevent focusing the menu bar. 
+; Disable top menu bar highlighting with Alt.
 ~Alt:: 
 {
 	Send "{Blind}{vkE8}"
